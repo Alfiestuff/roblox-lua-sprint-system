@@ -5,7 +5,7 @@ This Lua code uses delta time to calculate the sprint duration.
 
 For add in your game:
 
-1.Firts folder: In ReplicatedStorage create Folder and name it "Systems"
+1. Firts folder: In ReplicatedStorage create Folder and name it "Systems"
 
 2. Second Folder: Create another Folder and name it sprintSystems
 
