@@ -19,5 +19,5 @@ This Lua code uses **delta time** to calculate the sprint duration.
 
 ---
 
-### ⚙️ About the ModuleScript
+# ⚙️ About the ModuleScript
 
