@@ -19,5 +19,12 @@ This Lua code uses **delta time** to calculate the sprint duration.
 
 ---
 
-# ⚙️ About the ModuleScript
+### ⚙️ How the Module Works
 
+This system is built as a **ModuleScript**, which ensures that the sprint logic is **clean, reusable, and easy to manage**. It centralizes the movement mechanics, preventing code clutter in your project.
+
+#### Core Mechanics:
+* **Dual-Phase Regeneration:** * **Normal Regen:** Standard recovery when you stop sprinting.
+    * **Exhaustion Penalty:** If stamina hits 0%, the `slowRegenTime` delay is triggered before recovery starts.
+* **Dynamic Speed States:** Manages different speeds for walking, running, and exhaustion (SlowSpeed).
+* **Optimization:** Includes a toggleable debug mode to keep the game running smoothly.
