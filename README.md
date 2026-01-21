@@ -26,7 +26,7 @@ This system is built as a **ModuleScript**, which ensures that the sprint logic 
 #### Core Mechanics:
 * **Dual-Phase Regeneration:** * **Normal Regen:** Standard recovery when you stop sprinting.
     * **Exhaustion Penalty:** If stamina hits 0%, the `slowRegenTime` delay is triggered before recovery starts.
-* **Dynamic Speed States:** Manages different speeds for walking, running, and exhaustion (SlowSpeed).
+* **Dynamic Speed States:** Manages different speeds for walking, running, and exhaustion (`slowSpeed`).
 * **Optimization:** Includes a toggleable debug mode to keep the game running smoothly.
 
 ---
