@@ -1,12 +1,3 @@
-local RunService = game:GetService("RunService") -- Get the RunService
-local UserInputService = game:GetService("UserInputService") -- get the UserInputService
-
-local sprintSystemsModule = require(game.ReplicatedStorage.Systems.sprintSystems.Data) -- Get the Module
-
-local Running = false -- BoolValue
-local StaminaLose = false -- BoolValue
-
-local stamina = sprintSystemsModule["stamina"] -- stamina
 local regeneration = sprintSystemsModule["regeneration"] -- regeneration
 local slowRegeneration = stamina / sprintSystemsModule["slowRegenTime"]
 local RUNTIME = sprintSystemsModule["RUNTIME"] -- Runtime
@@ -19,16 +10,14 @@ local Humanoid = Character:WaitForChild("Humanoid") -- Get the Humanoid
 local function  Run(key) -- Check Running
 	if key.KeyCode == Enum.KeyCode.LeftShift and stamina > 0 then
 		Running = true
-		print("Running")
+		if sprintSystemsModule["viewOutpot"] == true then print("Running") end
 	end
 end
 
 local function StopRun(key) -- Check not Running
 	if key.KeyCode == Enum.KeyCode.LeftShift then
 		Running = false
-		print("Walking")
-
-
+		if sprintSystemsModule["viewOutpot"] == true then print("Walking") end
 	end
 end
 
